@@ -1,5 +1,7 @@
 import pygame, random
 pygame.init()
+pygame.mixer.init()
+sonido_fondo = pygame.mixer.Sound("fondo.wav")
 
 ANCHO = 1000
 ALTO = 600
