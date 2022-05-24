@@ -1,6 +1,9 @@
 import pygame, random
 pygame.init()
-
+pygame.mixer.init()
+laser_sonido=pygame.mixer.Sound('sonido/laser.wav')
+explosion_sonido=pygame.mixer.Sound('sonido/explosion.wav')
+golpe_sonido=pygame.mixer.Sound('sonido/golpe.wav')
 ANCHO = 1000
 ALTO = 600
 BLACK = (0, 0, 0)
@@ -87,7 +90,6 @@ class Enemies2(pygame.sprite.Sprite):
         if (self.rect.x == 900):
             self.speedx *= -1
             self.rect.y += 100
-    
 #Clase de laser
 class Laser(pygame.sprite.Sprite):
     def __init__(self):
@@ -140,7 +142,7 @@ while not ejecutar:
                 laser = Laser()
                 laser.rect.x = player.rect.x + 28
                 laser.rect.y = player.rect.y - 20
-
+                laser_sonido.play()
                 #Mete los laser en una lista
                 all_sprite_list.add(laser)
                 laser_list.add(laser)
@@ -159,16 +161,20 @@ while not ejecutar:
             all_sprite_list.remove(laser)
             laser_list.remove(laser)
             score += 100
+            explosion_sonido.set_volume(0.1)
+            explosion_sonido.play()
+            
 
         if (laser.rect.y < -10):
             all_sprite_list.remove(laser)
             laser_list.remove(laser)
-    
+            
     #Colision Enemigos-Jugador
     for player in player_list:
         player_hit_list = pygame.sprite.spritecollide(player, enemies_list, True)
         for i in player_hit_list:
             lives -= 1
+            golpe_sonido.play()
             if (lives == 0):
                 player_list.remove(player)
 
