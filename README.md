@@ -37,6 +37,6 @@ Es un editor de código fuente desarrollado por Microsoft para multiples platafo
   <img 
        src="https://www.unipython.com/wp-content/uploads/2017/07/pygame_logo.gif"
     width="800"
-    height="400"
+    height="236"
        <br>
 
