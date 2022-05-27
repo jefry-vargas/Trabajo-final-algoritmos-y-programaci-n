@@ -15,8 +15,7 @@ La decision de hacer un galaga surgio de la oportunidad de poder hacerlo, por nu
 
 # Programas usados:
 ## Python:
-  <br>
-  <img 
-       src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdevelopers.redhat.com%2Ftopics%2Fpython&psig=AOvVaw3bh9l5DbNFulDhRgd9jhvA&ust=1653751303643000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCPiLiuL9__cCFQAAAAAdAAAAABAD"
-       <br>
+  
+  <img src="https://developers.redhat.com/sites/default/files/styles/large/public/Python-01%20%282%29.png?itok=ZHGBm2C3"
+   
  
