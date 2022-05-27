@@ -45,13 +45,8 @@ Con sus clases y módulos brinda soporte al desarrollador para importar, tratar 
 #Codigo del Galaga
 Para el codigo del galaga tuvimos al principio varios percanses, como que al momento de generar los aliens solo generaba 1, o cuando especificabamos que en el siguiente nivel la cantidad fuese el doble de la anterior, aparecieran mas enemigos de los especificados, pero al final todos estos problemas pudimos solucionarlos paso a paso mirando el codigo y revisando que, por casualidad, no hubiese una coma en un lugar donde no debia, pero bueno, hablemos del codigo como tal que podran presenciarlo en el archivo proyect.py en la carpeta del proyecto final.
 
-Bueno, para poder crear el galaga, necesitabamos principalmente la libreria de Pygame y sys con las cuales realizamos todo el codigo siguiendo los siguientes pasos
+Bueno, para poder crear el galaga, necesitabamos principalmente la libreria de Pygame y sys con las cuales realizamos ,la implementacion de la apariencia de los enemigos y del jugador y del laser junto a sus respectivos sonidos conmo el disparo del laser del jugador y la colision lase-enemigo
     
--importamos las librerias.
-
--designamos el ancho y el alto de la pantalla y los colores necesarios para eliminar el fondo de las imagenes y la cantidad de fps que queremos que tenga el renderizado.
-
--Asignamos los valores de ancho y alto a la pantalla con ayuda de pygame y sys asi como tambien asignamos los sonidos a las distintas variables.
 
 
 
