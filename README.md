@@ -41,7 +41,14 @@ Es un editor de código fuente desarrollado por Microsoft para multiples platafo
        <br>
 Pygame es una librería multiplataforma sobre SDL para Python para la implementacion de juegos y aplicaciones de multimedios en 2 dimensiones.
 Con sus clases y módulos brinda soporte al desarrollador para importar, tratar y exportar imágenes en varios formatos, IGC y formas básicos, efectos de sonido, reproducción de audio de fondo y CDs, reproducción de video MPEG, tratamiento de eventos de ratón, joystick, teclado, tiempo y otras facilidades que permite rápidez y efectividad para el programador, especialmente si se trata de grupos o empresas pequeños, así como la garantía de soporte para varios sistemas operativos, sin cambios en el código fuente o en la versión compilada para la Máquina virtual de Python.
-#Interfas del Galaga
+
+#Codigo del Galaga
+Para el codigo del galaga tuvimos al principio varios percanses, como que al momento de generar los aliens solo generaba 1, o cuando especificabamos que en el siguiente nivel la cantidad fuese el doble de la anterior, aparecieran mas enemigos de los especificados, pero al final todos estos problemas pudimos solucionarlos paso a paso mirando el codigo y revisando que, por casualidad, no hubiese una coma en un lugar donde no debia, pero bueno, hablemos del codigo como tal que podran presenciarlo en el archivo proyect.py en la carpeta del proyecto final.
+
+Bueno, para poder crear el galaga, necesitabamos principalmente la libreria de Pygame y sys con las cuales realizamos todo el codigo siguiendo los siguientes pasos:
+    
+    -Para hacer esto, tuvimos que añadir distintas carpetas al codigo las cuales contienen las imagenes y los sonidos utilizados para la creacion del videojuego, asi como tambie
+
 
 ![image](https://user-images.githubusercontent.com/102546313/170782291-1fc45c04-cc55-4051-918c-1f5b45623b22.png)
 
