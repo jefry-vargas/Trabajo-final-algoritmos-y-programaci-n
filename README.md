@@ -22,4 +22,12 @@ La decision de hacer un galaga surgio de la oportunidad de poder hacerlo, por nu
     height="400"
        <br>
 Python es un lenguaje de programación imprescindible para cualquier persona que quiera empezar en el mundo del desarrollo web, ya que hablamos de aquel lenguaje dinámico que se desarrolla e implementa en una diversidad de plataformas, en este caso no solo plataformas si no también de aplicaciones. El objetivo principal es la automatización de procesos en el cual se pueda ahorrar el tiempo y por ende la dificultad de un problema, esta totalmente diseñado para trabajar con grandes volúmenes de datos, pues su procesamiento y amplia biblioteca de recursos es ideal para iniciar en la programación. Fue el lenguaje de programación usado en Visual Studio Code para la creacion del proyecto.
-## Visual Studio 
+
+## Visual Studio
+<br>
+  <img 
+       src="https://wallpaperaccess.com/full/2137975.jpg"
+    width="800"
+    height="400"
+       <br>
+Es un editor de código fuente desarrollado por Microsoft para multiples plataformas. También es personalizable, de modo que los usuarios pueden cambiar el tema del editor, los métodos abreviados de teclado y las preferencias. Cuenta con herramientas de Debug hasta opciones para actualización en tiempo real de nuestro código en la vista del navegador y compilación en vivo de los lenguajes que lo requieran. Su papel fue ser el editor de texto que usamos para el desarrollo del proyecto.
