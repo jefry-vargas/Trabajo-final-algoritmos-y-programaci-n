@@ -51,6 +51,8 @@ Bueno, para poder crear el galaga, necesitabamos principalmente la libreria de P
 ## Menu
 ![image](https://user-images.githubusercontent.com/102546313/170790114-34f59d08-a785-4c3d-96f5-498e87b698a1.png)
 
+En este apartado nos centramos en la pantalla de inicio del juego, que bueno, aquellos que hayan jugado en las maquinitas space invaders, sabran que tocaba insertar una moneda para poder empezar a jugar, pues quisimos acoplar esa idea, solo que en vez de insertar una moneda, simplemente pedimos al jugador que oprima la letra E en su teclado para poder disfrutar del juego.
+
 ## Mientras se juega
 
 ![image](https://user-images.githubusercontent.com/102546313/170790538-e0176e8d-2030-4bda-930a-b1229953635b.png)
