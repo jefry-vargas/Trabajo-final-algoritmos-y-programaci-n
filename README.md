@@ -41,3 +41,10 @@ Es un editor de código fuente desarrollado por Microsoft para multiples platafo
        <br>
 Pygame es una librería multiplataforma sobre SDL para Python para la implementacion de juegos y aplicaciones de multimedios en 2 dimensiones.
 Con sus clases y módulos brinda soporte al desarrollador para importar, tratar y exportar imágenes en varios formatos, IGC y formas básicos, efectos de sonido, reproducción de audio de fondo y CDs, reproducción de video MPEG, tratamiento de eventos de ratón, joystick, teclado, tiempo y otras facilidades que permite rápidez y efectividad para el programador, especialmente si se trata de grupos o empresas pequeños, así como la garantía de soporte para varios sistemas operativos, sin cambios en el código fuente o en la versión compilada para la Máquina virtual de Python.
+#Interfas del Galaga
+![image](https://user-images.githubusercontent.com/102546313/170782291-1fc45c04-cc55-4051-918c-1f5b45623b22.png)
+
+# Referencias
+    -ecured. Obtenido de https://www.ecured.cu/Python_Game_Library
+    -Santander Universidades. Obtenido de https://www.becas-santander.com/es/blog/python-que-es.html
+    -ecured. Obtenido de https://www.ecured.cu/Visual_Studio_Code
