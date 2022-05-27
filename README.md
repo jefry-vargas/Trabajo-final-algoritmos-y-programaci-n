@@ -59,7 +59,12 @@ En este apartado nos centramos en la pantalla de inicio del juego, que bueno, aq
 En este apartado podemos apreciar el momento en el que, valga la redundancia, estas jugando el juego, donde se puede apreciar, no solo la apariencia de la nave, sino tambien de los enemigos y del laser.
 
 ## Pasar de nivel o reiniciar el juego
-![image](https://user-images.githubusercontent.com/102546313/170790154-2af45075-b9bf-4c20-866e-daaaefb03f6c.png)
+ <br>
+  ![image](https://user-images.githubusercontent.com/102546313/170790154-2af45075-b9bf-4c20-866e-daaaefb03f6c.png)
+width="800"
+    height="400"
+       <br>
+
 En este apartado y como ultima instancia, vemos el menu que le da a decidir al jugador si desea pasar al siguiente nivel pulsando la letra R en el teclado, en dado caso de que no desee continuar, solo tendria que cerrar la pestaña, lo mismo que podemos hacer al momento de cerrar nuestro navegador preferido.
 
 # Referencias
