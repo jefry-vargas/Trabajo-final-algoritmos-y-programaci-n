@@ -63,6 +63,10 @@ En este apartado podemos apreciar el momento en el que, valga la redundancia, es
 
 En este apartado y como ultima instancia, vemos el menu que le da a decidir al jugador si desea pasar al siguiente nivel pulsando la letra R en el teclado, en dado caso de que no desee continuar, solo tendria que cerrar la pestaña, lo mismo que podemos hacer al momento de cerrar nuestro navegador preferido.
 
+#Conclusion 
+
+Al momento de pensar en la creacion de un videojuego como el galaga podrian pasar varias cosas pro tu mente como, no puedo hacerlo por que no tengo un pc lo suficientemente potente para poder hacerlo, se necesitan muchas cosas para poder crearlo, o simplemente piensas que es muy dificl de realizar, y la verdad no es asi, simplemente tienes que conocer lo mas importante y eso, como quieres que se vea, conocer las libreria de pygame y sus utilidades, algo que la verdad no es tan complejo como podrias imaginar y asi tengas errores al principio, o no consigas lo que esperabas, el simple hecho de que no te rindas e intentes crear algo por tus propios medios es suficiente para poder hacer un videojuego, y de tus propios errores generas experiencia, tomemos como ejempplo todos los errores que cometimos al momento de hacer el codigo, de todos y cada uno adquirimos experiencia,y eso es lo que nos ayudo a terminar el mismo codigo y el juego en si como lo ven en estos momentos y es algo que siempre vamos a recordar como equipo, y es que este fue nuestro primer pasode los muchos que vamos a dar.
+
 # Referencias
 Por ultimo, aqui pueden evidenciar los sitios de los que sacamos la informacion y la forma de editar usando la libreria de pygame para realizar el videojuego.
 
