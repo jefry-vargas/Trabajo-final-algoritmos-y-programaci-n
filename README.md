@@ -54,14 +54,17 @@ Bueno, para poder crear el galaga, necesitabamos principalmente la libreria de P
 En este apartado nos centramos en la pantalla de inicio del juego, que bueno, aquellos que hayan jugado en las maquinitas space invaders, sabran que tocaba insertar una moneda para poder empezar a jugar, pues quisimos acoplar esa idea, solo que en vez de insertar una moneda, simplemente pedimos al jugador que oprima la letra E en su teclado para poder disfrutar del juego.
 
 ## Mientras se juega
-
 ![image](https://user-images.githubusercontent.com/102546313/170790538-e0176e8d-2030-4bda-930a-b1229953635b.png)
 
-## Pasar de nivel o reiniciar el juego
+En este apartado podemos apreciar el momento en el que, valga la redundancia, estas jugando el juego, donde se puede apreciar, no solo la apariencia de la nave, sino tambien de los enemigos y del laser.
 
+## Pasar de nivel o reiniciar el juego
 ![image](https://user-images.githubusercontent.com/102546313/170790154-2af45075-b9bf-4c20-866e-daaaefb03f6c.png)
+En este apartado y como ultima instancia, vemos el menu que le da a decidir al jugador si desea pasar al siguiente nivel pulsando la letra R en el teclado, en dado caso de que no desee continuar, solo tendria que cerrar la pestaña, lo mismo que podemos hacer al momento de cerrar nuestro navegador preferido.
 
 # Referencias
+Por ultimo, aqui pueden evidenciar los sitios de los que sacamos la informacion
+    -Code intef. Obtenido de https://code.intef.es/prop_didacticas/pygame-realizando-juegos-con-python/
     -ecured. Obtenido de https://www.ecured.cu/Python_Game_Library
     -Santander Universidades. Obtenido de https://www.becas-santander.com/es/blog/python-que-es.html
     -ecured. Obtenido de https://www.ecured.cu/Visual_Studio_Code
