@@ -64,6 +64,7 @@ En este apartado y como ultima instancia, vemos el menu que le da a decidir al j
 
 # Referencias
 Por ultimo, aqui pueden evidenciar los sitios de los que sacamos la informacion
+
     -Code intef. Obtenido de https://code.intef.es/prop_didacticas/pygame-realizando-juegos-con-python/
     -ecured. Obtenido de https://www.ecured.cu/Python_Game_Library
     -Santander Universidades. Obtenido de https://www.becas-santander.com/es/blog/python-que-es.html
