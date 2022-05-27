@@ -26,7 +26,7 @@ Python es un lenguaje de programación imprescindible para cualquier persona que
 ## Visual Studio
 <br>
   <img 
-       src="https://wallpaperaccess.com/full/2137975.jpg"
+       src="https://res.cloudinary.com/practicaldev/image/fetch/s--phtox0U7--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn-images-1.medium.com/max/1200/1%2AEOPCay4ML76rIUskd6ZwRg.png"
     width="800"
     height="400"
        <br>
