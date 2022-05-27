@@ -45,12 +45,17 @@ Con sus clases y módulos brinda soporte al desarrollador para importar, tratar 
 #Codigo del Galaga
 Para el codigo del galaga tuvimos al principio varios percanses, como que al momento de generar los aliens solo generaba 1, o cuando especificabamos que en el siguiente nivel la cantidad fuese el doble de la anterior, aparecieran mas enemigos de los especificados, pero al final todos estos problemas pudimos solucionarlos paso a paso mirando el codigo y revisando que, por casualidad, no hubiese una coma en un lugar donde no debia, pero bueno, hablemos del codigo como tal que podran presenciarlo en el archivo proyect.py en la carpeta del proyecto final.
 
-Bueno, para poder crear el galaga, necesitabamos principalmente la libreria de Pygame y sys con las cuales realizamos ,la implementacion de la apariencia de los enemigos y del jugador y del laser junto a sus respectivos sonidos conmo el disparo del laser del jugador y la colision lase-enemigo; entre las distintas lineas de codigo podemos centrarnos las clases, que son aquellas que desigan la apariencia y la posision y el movimiento de los aliens, el jugador y el laser, y tambien podemos destacar el apartado de bucle principal que es donde se encuentran todas las interraciones con el teclado 
+Bueno, para poder crear el galaga, necesitabamos principalmente la libreria de Pygame y sys con las cuales realizamos ,la implementacion de la apariencia de los enemigos y del jugador y del laser junto a sus respectivos sonidos conmo el disparo del laser del jugador y la colision lase-enemigo; entre las distintas lineas de codigo podemos centrarnos las clases, que son aquellas que desigan la apariencia y la posision y el movimiento de los aliens, el jugador y el laser, y tambien podemos destacar el apartado de bucle principal que es donde se encuentran todas las interraciones con el teclado el cual conecta el movimiento, el disparo y el hecho de iniciar a jugar o pasar de nivel, asi como tambien el hecho de querer volve a jugar en dado caso de haber sido alcanzado por los aliens.
    
+#Interfazes del Galaga
+## Menu
 ![image](https://user-images.githubusercontent.com/102546313/170790114-34f59d08-a785-4c3d-96f5-498e87b698a1.png)
+
+## Mientras se juega
 
 ![image](https://user-images.githubusercontent.com/102546313/170790538-e0176e8d-2030-4bda-930a-b1229953635b.png)
 
+## Pasar de nivel o reiniciar el juego
 
 ![image](https://user-images.githubusercontent.com/102546313/170790154-2af45075-b9bf-4c20-866e-daaaefb03f6c.png)
 
