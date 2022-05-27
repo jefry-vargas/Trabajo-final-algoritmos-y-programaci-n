@@ -31,3 +31,12 @@ Python es un lenguaje de programación imprescindible para cualquier persona que
     height="400"
        <br>
 Es un editor de código fuente desarrollado por Microsoft para multiples plataformas. También es personalizable, de modo que los usuarios pueden cambiar el tema del editor, los métodos abreviados de teclado y las preferencias. Cuenta con herramientas de Debug hasta opciones para actualización en tiempo real de nuestro código en la vista del navegador y compilación en vivo de los lenguajes que lo requieran. Su papel fue ser el editor de texto que usamos para el desarrollo del proyecto.
+
+## Pygame
+<br>
+  <img 
+       src="https://www.unipython.com/wp-content/uploads/2017/07/pygame_logo.gif"
+    width="800"
+    height="400"
+       <br>
+
