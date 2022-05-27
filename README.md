@@ -47,7 +47,10 @@ Para el codigo del galaga tuvimos al principio varios percanses, como que al mom
 
 Bueno, para poder crear el galaga, necesitabamos principalmente la libreria de Pygame y sys con las cuales realizamos todo el codigo siguiendo los siguientes pasos:
     
-    -Para hacer esto, tuvimos que añadir distintas carpetas al codigo las cuales contienen las imagenes y los sonidos utilizados para la creacion del videojuego, asi como tambie
+-importamos las librerias.
+-designamos el ancho y el alto de la pantalla y los colores necesarios para eliminar el fondo de las imagenes y la cantidad de fps que queremos que tenga el renderizado.
+-Asignamos los valores de ancho y alto a la pantalla con ayuda de pygame y sys asi como tambien asignamos los sonidos a las distintas variables.
+-
 
 
 ![image](https://user-images.githubusercontent.com/102546313/170782291-1fc45c04-cc55-4051-918c-1f5b45623b22.png)
