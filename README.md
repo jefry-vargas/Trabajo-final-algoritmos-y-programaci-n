@@ -63,7 +63,7 @@ En este apartado podemos apreciar el momento en el que, valga la redundancia, es
 En este apartado y como ultima instancia, vemos el menu que le da a decidir al jugador si desea pasar al siguiente nivel pulsando la letra R en el teclado, en dado caso de que no desee continuar, solo tendria que cerrar la pestaña, lo mismo que podemos hacer al momento de cerrar nuestro navegador preferido.
 
 # Referencias
-Por ultimo, aqui pueden evidenciar los sitios de los que sacamos la informacion
+Por ultimo, aqui pueden evidenciar los sitios de los que sacamos la informacion y la forma de editar usando la libreria de pygame para realizar el videojuego.
 
     -Code intef. Obtenido de https://code.intef.es/prop_didacticas/pygame-realizando-juegos-con-python/
     -ecured. Obtenido de https://www.ecured.cu/Python_Game_Library
