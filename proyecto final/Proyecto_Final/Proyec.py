@@ -1,26 +1,31 @@
-import pygame, random, sys
+import pygame, sys
 pygame.init()
 
-#constantes
+#Constantes
 ANCHO = 1000
 ALTO = 600
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
+FPS = 60
+CANTENE = 5
 
 screen = pygame.display.set_mode([ANCHO, ALTO])
 clock = pygame.time.Clock()
 game_over = False
 ejecutar = False
-done = True
+playing = False
+beginning = True
+
 fontlives = pygame.font.SysFont("Algerian", 25)
 fontscore = pygame.font.SysFont("Algerian", 25)
 
 score = 0
 lives = 3
-#sonidos
+#Sonidos
 laser_sonido=pygame.mixer.Sound('sonido/laser.wav')
 explosion_sonido=pygame.mixer.Sound('sonido/explosion.wav')
 golpe_sonido=pygame.mixer.Sound('sonido/golpe.wav')
+explosion_sonido.set_volume(0.2)
 
 #Listas
 all_sprite_list = pygame.sprite.Group()
@@ -35,6 +40,10 @@ fondo_y = 0
 icono = pygame.image.load("Fondos/icono.png")
 pygame.display.set_icon(icono)
 pygame.display.set_caption("Trabajo final Algoritmos y programación")
+
+titulo = pygame.image.load("Fondos/titulo.png").convert()
+titulo.set_colorkey(WHITE)
+
 #Clase del jugador
 class Player(pygame.sprite.Sprite):
     def __init__(self):
@@ -112,7 +121,7 @@ class Laser(pygame.sprite.Sprite):
         self.rect.y -= 20
 #Genera enemigosl
 contador = 0
-for i in range (5):
+for i in range (CANTENE):
     enemies = Enemies()
     enemies.rect.x += contador
     contador+= 50
@@ -120,7 +129,7 @@ for i in range (5):
     all_sprite_list.add(enemies)
 
 contador2 = 0
-for i in range (5):
+for i in range (CANTENE):
     enemies2 = Enemies2()
     enemies2.rect.x += contador2
     contador2-= 50
@@ -131,8 +140,6 @@ for i in range (5):
 player = Player()
 player_list.add(player)
 all_sprite_list.add(player)
-
-
 
 #Bucle principal
 while not ejecutar:
@@ -152,8 +159,9 @@ while not ejecutar:
                 laser = Laser()
                 laser.rect.x = player.rect.x + 28
                 laser.rect.y = player.rect.y - 20
-                if not game_over:
+                if playing:
                     laser_sonido.play()
+
                 #Mete los laser en una lista
                 all_sprite_list.add(laser)
                 laser_list.add(laser)
@@ -164,13 +172,17 @@ while not ejecutar:
                 player.changespeed(3)
             if event.key == pygame.K_d:
                 player.changespeed(-3)
+
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_r:
                 if game_over:
-                    done = True
+                    playing = True
+
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_e:
+                    beginning = False
+                    playing = True
                     
-
-
     #Colision Laser-Enemigos
     for laser in laser_list:
         enemies_hit_list = pygame.sprite.spritecollide(laser, enemies_list, True)
@@ -178,10 +190,8 @@ while not ejecutar:
             all_sprite_list.remove(laser)
             laser_list.remove(laser)
             score += 100
-            explosion_sonido.set_volume(0.1)
             explosion_sonido.play()
-            
-
+              
         if (laser.rect.y < -10):
             all_sprite_list.remove(laser)
             laser_list.remove(laser)
@@ -196,11 +206,47 @@ while not ejecutar:
                 player_list.remove(player)
 
     #Dibujar objeto
-    if done:
+    if beginning:
+        font = pygame.font.SysFont("serif", 40)
+        final = font.render("Press 'E' to play game.", True, WHITE)
+        center_text_x = ANCHO//2
+        center_text_y = ALTO//2
+
+        movimiento_fondo = fondo_y % fondo.get_rect().height
+        screen.blit(fondo, (0,movimiento_fondo-fondo.get_rect().height))
+        if movimiento_fondo < ALTO:
+            screen.blit(fondo, (0,movimiento_fondo))
+        fondo_y += 1
+        screen.blit(final,[center_text_x-180,center_text_y-20])
+        screen.blit(titulo, [300,30])
+
+    if playing:
         all_sprite_list.update()
-        if (len(enemies_list) == 0 or len(player_list) == 0):
+        if(len(player_list) == 0):
             game_over = True
-            done = False
+            playing = False
+
+        if (len(enemies_list) == 0):
+            game_over = True
+            playing = False
+
+            contador = 0
+            CANTENE += 4
+            for i in range (CANTENE):
+                enemies = Enemies()
+                enemies.rect.x += contador
+                contador+= 50
+                enemies_list.add(enemies)
+                all_sprite_list.add(enemies)
+
+            contador2 = 0
+            for i in range (CANTENE):
+                enemies2 = Enemies2()
+                enemies2.rect.x += contador2
+                contador2-= 50
+                enemies_list.add(enemies2)
+                all_sprite_list.add(enemies2)
+
         movimiento_fondo = fondo_y % fondo.get_rect().height
         screen.blit(fondo, (0,movimiento_fondo-fondo.get_rect().height))
         if movimiento_fondo < ALTO:
@@ -212,12 +258,27 @@ while not ejecutar:
         screen.blit (textscore, (20, 550))
         all_sprite_list.draw(screen)
     pygame.display.flip()
-    if not done:
-        font = pygame.font.SysFont("serif", 25)
-        text = font.render("Game over, Click 'R' to play again ", True, WHITE)
-        center_text_x = ANCHO//2
-        center_text_y = ALTO//2
-        screen.blit(fondo, [0,0])
-        screen.blit(text,[center_text_x-170,center_text_y-20])
-    clock.tick(60)
+
+    if not beginning:
+        if not playing:
+            font = pygame.font.SysFont("serif", 40)
+            final = font.render("Level Complete, Press 'R' to play next level.", True, WHITE)
+            center_text_x = ANCHO//2
+            center_text_y = ALTO//2
+
+            movimiento_fondo = fondo_y % fondo.get_rect().height
+            screen.blit(fondo, (0,movimiento_fondo-fondo.get_rect().height))
+            if movimiento_fondo < ALTO:
+                screen.blit(fondo, (0,movimiento_fondo))
+            fondo_y += 1
+            screen.blit(final,[center_text_x-350,center_text_y-20])
+            screen.blit(titulo, [300,30])
+
+            score = 0
+            lives = 3
+            player.rect.centerx = ANCHO//2
+            player.speed_x = 0
+            player.speed_y = 0
+
+    clock.tick(FPS)
 pygame.quit()
