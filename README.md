@@ -18,6 +18,9 @@ La decision de hacer un galaga surgio de la oportunidad de poder hacerlo, por nu
   <br>
   <img 
        src="https://developers.redhat.com/sites/default/files/styles/large/public/Python-01%20%282%29.png?itok=ZHGBm2C3"
-       align= "center"
+     align="center"
+     alt="Cute quá dợ.";
+     width="200"
+     height="200"
        <br>
  
