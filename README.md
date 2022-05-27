@@ -49,7 +49,8 @@ Bueno, para poder crear el galaga, necesitabamos principalmente la libreria de P
    
 ![image](https://user-images.githubusercontent.com/102546313/170790114-34f59d08-a785-4c3d-96f5-498e87b698a1.png)
 
-![image](https://user-images.githubusercontent.com/102546313/170782291-1fc45c04-cc55-4051-918c-1f5b45623b22.png)
+![image](https://user-images.githubusercontent.com/102546313/170790538-e0176e8d-2030-4bda-930a-b1229953635b.png)
+
 
 ![image](https://user-images.githubusercontent.com/102546313/170790154-2af45075-b9bf-4c20-866e-daaaefb03f6c.png)
 
